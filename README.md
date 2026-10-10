@@ -12,6 +12,8 @@ One `.lcpreset` file per look: it is plain JSON, so `git diff` shows exactly whi
 | `portra-400.lcpreset` | Portra 400 | Soft, slightly overexposed colour negative: low contrast, lifted blacks, warm pastel tones. |
 | `cinestill-800t.lcpreset` | CineStill 800T | Tungsten cinema stock: cold blue-green mood, warm lights, a glow on the highlights. |
 | `wong-kar-wai.lcpreset` | Wong Kar-wai | *Chungking Express* / *Fallen Angels*: green cast, saturated colours, strong grain, marked contrast. |
+| `kodachrome-64.lcpreset` | Kodachrome 64 | Slide film: punchy contrast, dense neutral blacks, deep saturated reds, darker blue skies, very fine grain. |
+| `kodak-gold-200.lcpreset` | Kodak Gold 200 | Consumer colour negative: golden warmth, boosted yellows and oranges, muted blues, medium contrast, visible grain. |
 
 In LightCraft they live in the **Looks** preset group.
 
@@ -40,6 +42,9 @@ first, then fine-tune.
   balance by hand (3200–3400 K at night).
 - **Wong Kar-wai**: tuned on a night scene. In daylight, lower the preset amount (50–70 %).
 - **Portra 400**: not yet checked on a portrait.
+- **Kodachrome 64**: the stock was discontinued in 2010, so the look is rebuilt from scans and
+  recollections; sources disagree on its blues and greens.
+- **Kodak Gold 200**: the warmth comes from colour grading and the mixer, not from white balance.
 - A full reset of a photo turns off its lens correction (dark corners and curved lines on a wide
   lens): turn it back on before judging a look.
 

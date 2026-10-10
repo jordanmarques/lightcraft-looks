@@ -1,0 +1,190 @@
+{
+  "format": "lightcraft.preset",
+  "version": 1,
+  "presets": [
+    {
+      "id": "user.46.kodak-gold-200",
+      "name": "Kodak Gold 200",
+      "group": "Looks",
+      "settings": {
+        "bw_mix": {
+          "aqua": 0.0,
+          "blue": 0.0,
+          "green": 0.0,
+          "magenta": 0.0,
+          "orange": 0.0,
+          "purple": 0.0,
+          "red": 0.0,
+          "yellow": 0.0
+        },
+        "calibration": {
+          "blue_hue": 0.0,
+          "blue_sat": 0.0,
+          "green_hue": 0.0,
+          "green_sat": 0.0,
+          "red_hue": 0.0,
+          "red_sat": 0.0,
+          "shadows_tint": 0.0
+        },
+        "color": {
+          "saturation": 3.0,
+          "vibrance": 12.0
+        },
+        "curve": {
+          "blue": [],
+          "darks": 0.0,
+          "green": [],
+          "highlights": 0.0,
+          "lights": 0.0,
+          "master": [
+            {
+              "x": 0.0,
+              "y": 0.03
+            },
+            {
+              "x": 0.14,
+              "y": 0.13
+            },
+            {
+              "x": 0.32,
+              "y": 0.31
+            },
+            {
+              "x": 0.5,
+              "y": 0.52
+            },
+            {
+              "x": 0.72,
+              "y": 0.76
+            },
+            {
+              "x": 1.0,
+              "y": 0.97
+            }
+          ],
+          "red": [],
+          "refine_saturation": 100.0,
+          "shadows": 0.0,
+          "split_highlights": 75.0,
+          "split_mid": 50.0,
+          "split_shadows": 25.0
+        },
+        "detail": {
+          "nr_color": 25.0,
+          "nr_color_detail": 50.0,
+          "nr_color_smoothness": 50.0,
+          "nr_contrast": 0.0,
+          "nr_detail": 50.0,
+          "nr_luminance": 0.0,
+          "sharpen_amount": 30.0,
+          "sharpen_detail": 25.0,
+          "sharpen_masking": 10.0,
+          "sharpen_radius": 1.0
+        },
+        "effects": {
+          "clarity": -3.0,
+          "dehaze": 0.0,
+          "texture": 0.0
+        },
+        "enhance": {
+          "denoise": 0.0,
+          "raw_details": false,
+          "super_resolution": false
+        },
+        "grading": {
+          "balance": 0.0,
+          "blending": 50.0,
+          "global": {
+            "hue": 0.0,
+            "lum": 0.0,
+            "sat": 0.0
+          },
+          "highlights": {
+            "hue": 48.0,
+            "lum": 0.0,
+            "sat": 16.0
+          },
+          "midtones": {
+            "hue": 45.0,
+            "lum": 0.0,
+            "sat": 10.0
+          },
+          "shadows": {
+            "hue": 110.0,
+            "lum": 0.0,
+            "sat": 5.0
+          }
+        },
+        "grain": {
+          "amount": 28.0,
+          "roughness": 50.0,
+          "seed": 0,
+          "size": 30.0
+        },
+        "light": {
+          "blacks": 8.0,
+          "contrast": 8.0,
+          "exposure": 0.15,
+          "highlights": -20.0,
+          "shadows": 20.0,
+          "whites": 0.0
+        },
+        "masks": [],
+        "mixer": {
+          "aqua": {
+            "hue": 0.0,
+            "lum": 0.0,
+            "sat": -12.0
+          },
+          "blue": {
+            "hue": -5.0,
+            "lum": 0.0,
+            "sat": -15.0
+          },
+          "green": {
+            "hue": -12.0,
+            "lum": 0.0,
+            "sat": 3.0
+          },
+          "magenta": {
+            "hue": 0.0,
+            "lum": 0.0,
+            "sat": 0.0
+          },
+          "orange": {
+            "hue": 0.0,
+            "lum": 5.0,
+            "sat": 10.0
+          },
+          "purple": {
+            "hue": 0.0,
+            "lum": 0.0,
+            "sat": 0.0
+          },
+          "red": {
+            "hue": 0.0,
+            "lum": 3.0,
+            "sat": 8.0
+          },
+          "yellow": {
+            "hue": 0.0,
+            "lum": 10.0,
+            "sat": 15.0
+          }
+        },
+        "point_colors": [],
+        "treatment": "color",
+        "vignette": {
+          "amount": 0.0,
+          "feather": 50.0,
+          "highlights": 0.0,
+          "midpoint": 50.0,
+          "roundness": 0.0,
+          "style": "highlightPriority"
+        }
+      },
+      "favorite": false,
+      "builtin": false
+    }
+  ]
+}
