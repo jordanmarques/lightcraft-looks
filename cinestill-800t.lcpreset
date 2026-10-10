@@ -1,0 +1,236 @@
+{
+  "format": "lightcraft.preset",
+  "version": 1,
+  "presets": [
+    {
+      "id": "user.44.cinestill-800t",
+      "name": "CineStill 800T",
+      "group": "Looks",
+      "settings": {
+        "bw_mix": {
+          "aqua": 0.0,
+          "blue": 0.0,
+          "green": 0.0,
+          "magenta": 0.0,
+          "orange": 0.0,
+          "purple": 0.0,
+          "red": 0.0,
+          "yellow": 0.0
+        },
+        "calibration": {
+          "blue_hue": 0.0,
+          "blue_sat": 0.0,
+          "green_hue": 0.0,
+          "green_sat": 0.0,
+          "red_hue": 0.0,
+          "red_sat": 0.0,
+          "shadows_tint": 0.0
+        },
+        "color": {
+          "saturation": -5.0,
+          "vibrance": 8.0
+        },
+        "curve": {
+          "blue": [],
+          "darks": 0.0,
+          "green": [],
+          "highlights": 0.0,
+          "lights": 0.0,
+          "master": [
+            {
+              "x": 0.0,
+              "y": 0.025
+            },
+            {
+              "x": 0.15,
+              "y": 0.12
+            },
+            {
+              "x": 0.35,
+              "y": 0.33
+            },
+            {
+              "x": 0.5,
+              "y": 0.51
+            },
+            {
+              "x": 0.72,
+              "y": 0.77
+            },
+            {
+              "x": 0.9,
+              "y": 0.93
+            },
+            {
+              "x": 1.0,
+              "y": 0.98
+            }
+          ],
+          "red": [],
+          "refine_saturation": 100.0,
+          "shadows": 0.0,
+          "split_highlights": 75.0,
+          "split_mid": 50.0,
+          "split_shadows": 25.0
+        },
+        "detail": {
+          "nr_color": 25.0,
+          "nr_color_detail": 50.0,
+          "nr_color_smoothness": 50.0,
+          "nr_contrast": 0.0,
+          "nr_detail": 50.0,
+          "nr_luminance": 0.0,
+          "sharpen_amount": 40.0,
+          "sharpen_detail": 25.0,
+          "sharpen_masking": 0.0,
+          "sharpen_radius": 1.0
+        },
+        "effects": {
+          "clarity": -8.0,
+          "dehaze": 5.0,
+          "texture": 5.0
+        },
+        "enhance": {
+          "denoise": 0.0,
+          "raw_details": false,
+          "super_resolution": false
+        },
+        "grading": {
+          "balance": -10.0,
+          "blending": 50.0,
+          "global": {
+            "hue": 0.0,
+            "lum": 0.0,
+            "sat": 0.0
+          },
+          "highlights": {
+            "hue": 20.0,
+            "lum": 0.0,
+            "sat": 10.0
+          },
+          "midtones": {
+            "hue": 0.0,
+            "lum": 0.0,
+            "sat": 0.0
+          },
+          "shadows": {
+            "hue": 185.0,
+            "lum": 0.0,
+            "sat": 16.0
+          }
+        },
+        "grain": {
+          "amount": 30.0,
+          "roughness": 50.0,
+          "seed": 0,
+          "size": 30.0
+        },
+        "light": {
+          "blacks": -12.0,
+          "contrast": 12.0,
+          "exposure": 0.25,
+          "highlights": -25.0,
+          "shadows": 15.0,
+          "whites": 8.0
+        },
+        "masks": [
+          {
+            "adjust": {
+              "amount": 100.0,
+              "blacks": 0.0,
+              "clarity": -45.0,
+              "color_hue": 8.0,
+              "color_sat": 55.0,
+              "contrast": 0.0,
+              "defringe": 0.0,
+              "dehaze": -15.0,
+              "exposure": 0.1,
+              "highlights": 0.0,
+              "hue": 0.0,
+              "moire": 0.0,
+              "noise": 0.0,
+              "saturation": 0.0,
+              "shadows": 0.0,
+              "sharpness": 0.0,
+              "temp": 0.0,
+              "texture": 0.0,
+              "tint": 0.0,
+              "whites": 0.0
+            },
+            "components": [
+              {
+                "invert": false,
+                "op": "add",
+                "shape": {
+                  "hi": 1.0,
+                  "hi_feather": 0.1,
+                  "kind": "luminanceRange",
+                  "lo": 0.8,
+                  "lo_feather": 0.1
+                }
+              }
+            ],
+            "id": 1,
+            "invert": false,
+            "name": "Halation",
+            "visible": true
+          }
+        ],
+        "mixer": {
+          "aqua": {
+            "hue": 0.0,
+            "lum": 0.0,
+            "sat": 8.0
+          },
+          "blue": {
+            "hue": -8.0,
+            "lum": 0.0,
+            "sat": 5.0
+          },
+          "green": {
+            "hue": 10.0,
+            "lum": 0.0,
+            "sat": -15.0
+          },
+          "magenta": {
+            "hue": 0.0,
+            "lum": 0.0,
+            "sat": 0.0
+          },
+          "orange": {
+            "hue": 0.0,
+            "lum": 0.0,
+            "sat": -5.0
+          },
+          "purple": {
+            "hue": 0.0,
+            "lum": 0.0,
+            "sat": 0.0
+          },
+          "red": {
+            "hue": 0.0,
+            "lum": 0.0,
+            "sat": 12.0
+          },
+          "yellow": {
+            "hue": -5.0,
+            "lum": 0.0,
+            "sat": -15.0
+          }
+        },
+        "point_colors": [],
+        "treatment": "color",
+        "vignette": {
+          "amount": 0.0,
+          "feather": 50.0,
+          "highlights": 0.0,
+          "midpoint": 50.0,
+          "roundness": 0.0,
+          "style": "highlightPriority"
+        }
+      },
+      "favorite": false,
+      "builtin": false
+    }
+  ]
+}
