@@ -126,12 +126,12 @@
           "size": 30.0
         },
         "light": {
-          "blacks": -12.0,
-          "contrast": 18.0,
+          "blacks": -16.0,
+          "contrast": 26.0,
           "exposure": 0.0,
           "highlights": -15.0,
           "shadows": 5.0,
-          "whites": 8.0
+          "whites": 10.0
         },
         "masks": [],
         "mixer": {
