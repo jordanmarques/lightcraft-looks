@@ -1,68 +1,68 @@
 # lightcraft-looks
 
-Bibliothèque de looks pour [LightCraft](https://github.com/storytold/lightcraft), versionnée.
-Un fichier `.lcpreset` par look : c'est du JSON, donc un `git diff` montre quel réglage a changé.
+A versioned library of looks for [LightCraft](https://github.com/storytold/lightcraft).
+One `.lcpreset` file per look: it is plain JSON, so `git diff` shows exactly which setting changed.
 
-## Les looks
+## The looks
 
-| Fichier | Look | En bref |
+| File | Look | In short |
 |---|---|---|
-| `leica-m.lcpreset` | Leica M | Rendu couleur des Leica M numériques récents : noirs denses, hautes lumières douces, verts calmés, bleus profonds. |
-| `tri-x-1600-moriyama.lcpreset` | Tri-X 1600 Moriyama | Tri-X 400 poussée de deux stops, façon Daido Moriyama : noir et blanc dur, ombres bouchées, gros grain. |
-| `portra-400.lcpreset` | Portra 400 | Négatif couleur doux et légèrement surexposé : contraste faible, noirs relevés, tons chauds et pastel. |
-| `cinestill-800t.lcpreset` | CineStill 800T | Pellicule cinéma tungstène : ambiance froide bleu-vert, lumières chaudes, halo sur les hautes lumières. |
-| `wong-kar-wai.lcpreset` | Wong Kar-wai | *Chungking Express* / *Les Anges déchus* : dominante verte, couleurs saturées, grain fort, contraste marqué. |
+| `leica-m.lcpreset` | Leica M | Colour rendering of recent digital Leica M bodies: dense blacks, gentle highlights, calmer greens, deep blues. |
+| `tri-x-1600-moriyama.lcpreset` | Tri-X 1600 Moriyama | Tri-X 400 pushed two stops, after Daido Moriyama: hard black and white, blocked shadows, heavy grain. |
+| `portra-400.lcpreset` | Portra 400 | Soft, slightly overexposed colour negative: low contrast, lifted blacks, warm pastel tones. |
+| `cinestill-800t.lcpreset` | CineStill 800T | Tungsten cinema stock: cold blue-green mood, warm lights, a glow on the highlights. |
+| `wong-kar-wai.lcpreset` | Wong Kar-wai | *Chungking Express* / *Fallen Angels*: green cast, saturated colours, strong grain, marked contrast. |
 
-Dans LightCraft, ils sont rangés dans le groupe de presets **Looks**.
+In LightCraft they live in the **Looks** preset group.
 
-## Ce que contient un look
+## What a look contains
 
-Tous les looks écrivent les mêmes groupes de réglages, y compris à leur valeur neutre, pour qu'un
-look remplace entièrement le précédent au lieu de s'y cumuler :
+Every look writes the same groups of settings, including at their neutral value, so that one look
+fully replaces the previous one instead of stacking on top of it:
 
-couleur ou noir et blanc, tonalité, courbe, couleur, mélangeur, virage, étalonnage, effets,
-vignetage, grain, netteté, masques.
+colour or black and white, light, tone curve, colour, colour mixer, colour grading, calibration,
+effects, vignette, grain, detail, masks.
 
-Restent **hors** des looks, car propres à chaque photo : balance des blancs, recadrage, géométrie,
-corrections optiques.
+These stay **out** of the looks because they belong to each photo: white balance, crop, geometry,
+lens corrections.
 
-Conséquence : appliquer un look écrase les retouches manuelles faites dans ces groupes. Appliquer le
-look d'abord, affiner ensuite.
+As a consequence, applying a look overwrites manual edits made in those groups. Apply the look
+first, then fine-tune.
 
-## Limites connues
+## Known limits
 
-- Ces looks sont des interprétations réglées à l'œil à partir de descriptions publiées, pas des
-  profils mesurés sur les appareils ou les pellicules.
-- Ce qui relève de l'optique ou de la prise de vue n'est qu'imité ou absent : micro-contraste et
-  bokeh Leica, flou de bougé de Moriyama, flou saccadé de Wong Kar-wai.
-- **CineStill 800T** : le halo est approché par un masque qui teinte les hautes lumières ; il ne
-  déborde pas autour des sources comme le vrai. Pour le plein effet, refroidir la balance des blancs
-  à la main (3200–3400 K de nuit).
-- **Wong Kar-wai** : dosé sur une scène de nuit. De jour, baisser l'intensité du preset (50–70 %).
-- **Portra 400** : pas encore vérifié sur un portrait.
-- Un reset complet d'une photo désactive sa correction d'objectif (coins sombres, lignes courbes
-  sur un grand-angle) : la réactiver avant de juger un look.
+- These looks are interpretations tuned by eye from published descriptions, not profiles measured
+  on the cameras or film stocks.
+- Anything that comes from the optics or from the shooting itself is only imitated, or missing:
+  Leica micro-contrast and bokeh, Moriyama's motion blur, Wong Kar-wai's step-printed blur.
+- **CineStill 800T**: the halation is approximated by a mask that tints the highlights; it does
+  not bleed around light sources the way the real one does. For the full effect, cool the white
+  balance by hand (3200–3400 K at night).
+- **Wong Kar-wai**: tuned on a night scene. In daylight, lower the preset amount (50–70 %).
+- **Portra 400**: not yet checked on a portrait.
+- A full reset of a photo turns off its lens correction (dark corners and curved lines on a wide
+  lens): turn it back on before judging a look.
 
-## Installer les looks
+## Installing the looks
 
-Dans LightCraft : menu *File → Import Presets*, puis choisir les fichiers `.lcpreset` (ou le dossier).
+In LightCraft: *File → Import Presets*, then pick the `.lcpreset` files (or the folder).
 
-En ligne de commande, sur l'application lancée avec `--control 7980` :
+From the command line, against the app started with `--control 7980`:
 
 ```sh
-lightcraft-cli run --connect 127.0.0.1:7980 preset.import 'paths=["/chemin/vers/lightcraft-looks"]' group=Looks
+lightcraft-cli run --connect 127.0.0.1:7980 preset.import 'paths=["/path/to/lightcraft-looks"]' group=Looks
 ```
 
-## Mettre à jour le dépôt
+## Updating the repository
 
-Le dépôt ne suit pas LightCraft tout seul : après avoir modifié un look dans l'application, il faut
-réexporter son fichier puis commiter.
+The repository does not follow LightCraft on its own: after changing a look in the app, re-export
+its file and commit.
 
 ```sh
-lightcraft-cli run --connect 127.0.0.1:7980 presets.list          # retrouver l'id du preset
+lightcraft-cli run --connect 127.0.0.1:7980 presets.list          # find the preset id
 lightcraft-cli run --connect 127.0.0.1:7980 preset.export \
     path="$PWD/leica-m.lcpreset" 'ids=["user.41.leica-m"]'
 ```
 
-Les ids (`user.41.leica-m`, …) sont ceux de la bibliothèque d'origine ; ils peuvent différer après
-un import sur une autre machine.
+The ids (`user.41.leica-m`, …) are those of the original library; they may differ after an import
+on another machine.
