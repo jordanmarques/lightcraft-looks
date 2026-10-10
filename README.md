@@ -25,10 +25,10 @@ Every look writes the same groups of settings, including at their neutral value,
 fully replaces the previous one instead of stacking on top of it:
 
 colour or black and white, light, tone curve, colour, colour mixer, colour grading, calibration,
-effects, vignette, grain, detail, masks.
+effects, vignette, grain, detail.
 
 These stay **out** of the looks because they belong to each photo: white balance, crop, geometry,
-lens corrections.
+lens corrections, masks. Your own masks survive a change of look.
 
 As a consequence, applying a look overwrites manual edits made in those groups. Apply the look
 first, then fine-tune.
@@ -39,9 +39,9 @@ first, then fine-tune.
   on the cameras or film stocks.
 - Anything that comes from the optics or from the shooting itself is only imitated, or missing:
   Leica micro-contrast and bokeh, Moriyama's motion blur, Wong Kar-wai's step-printed blur.
-- **CineStill 800T**: the halation is approximated by a mask that tints the highlights; it does
-  not bleed around light sources the way the real one does. For the full effect, cool the white
-  balance by hand (3200–3400 K at night).
+- **CineStill 800T**: there is no real halation. The red glow around light sources is only hinted
+  at by a red-orange tint in the highlights (an earlier version used a mask, dropped so that looks
+  never touch masks). For the full effect, cool the white balance by hand (3200–3400 K at night).
 - **Wong Kar-wai**: tuned on a night scene. In daylight, lower the preset amount (50–70 %).
 - **Portra 400**: not yet checked on a portrait.
 - **Kodachrome 64**: the stock was discontinued in 2010, so the look is rebuilt from scans and

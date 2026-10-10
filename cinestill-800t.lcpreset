@@ -104,9 +104,9 @@
             "sat": 0.0
           },
           "highlights": {
-            "hue": 20.0,
+            "hue": 18.0,
             "lum": 0.0,
-            "sat": 10.0
+            "sat": 14.0
           },
           "midtones": {
             "hue": 0.0,
@@ -133,49 +133,6 @@
           "shadows": 15.0,
           "whites": 8.0
         },
-        "masks": [
-          {
-            "adjust": {
-              "amount": 100.0,
-              "blacks": 0.0,
-              "clarity": -45.0,
-              "color_hue": 8.0,
-              "color_sat": 55.0,
-              "contrast": 0.0,
-              "defringe": 0.0,
-              "dehaze": -15.0,
-              "exposure": 0.1,
-              "highlights": 0.0,
-              "hue": 0.0,
-              "moire": 0.0,
-              "noise": 0.0,
-              "saturation": 0.0,
-              "shadows": 0.0,
-              "sharpness": 0.0,
-              "temp": 0.0,
-              "texture": 0.0,
-              "tint": 0.0,
-              "whites": 0.0
-            },
-            "components": [
-              {
-                "invert": false,
-                "op": "add",
-                "shape": {
-                  "hi": 1.0,
-                  "hi_feather": 0.1,
-                  "kind": "luminanceRange",
-                  "lo": 0.8,
-                  "lo_feather": 0.1
-                }
-              }
-            ],
-            "id": 1,
-            "invert": false,
-            "name": "Halation",
-            "visible": true
-          }
-        ],
         "mixer": {
           "aqua": {
             "hue": 0.0,

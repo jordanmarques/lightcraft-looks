@@ -133,7 +133,6 @@
           "shadows": 5.0,
           "whites": 6.0
         },
-        "masks": [],
         "mixer": {
           "aqua": {
             "hue": 0.0,
