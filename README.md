@@ -8,6 +8,7 @@ One `.lcpreset` file per look: it is plain JSON, so `git diff` shows exactly whi
 | File | Look | In short |
 |---|---|---|
 | `leica-m.lcpreset` | Leica M | Colour rendering of recent digital Leica M bodies: dense blacks, gentle highlights, calmer greens, deep blues. |
+| `tri-x-400.lcpreset` | Tri-X 400 | Tri-X 400 at box speed: classic black and white, full tonal range, firm but not harsh contrast, moderate grain. |
 | `tri-x-1600-moriyama.lcpreset` | Tri-X 1600 Moriyama | Tri-X 400 pushed two stops, after Daido Moriyama: hard black and white, blocked shadows, heavy grain. |
 | `portra-400.lcpreset` | Portra 400 | Soft, slightly overexposed colour negative: low contrast, lifted blacks, warm pastel tones. |
 | `cinestill-800t.lcpreset` | CineStill 800T | Tungsten cinema stock: cold blue-green mood, warm lights, a glow on the highlights. |
