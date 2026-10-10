@@ -15,7 +15,7 @@ One `.lcpreset` file per look: it is plain JSON, so `git diff` shows exactly whi
 | `wong-kar-wai.lcpreset` | Wong Kar-wai | *Chungking Express* / *Fallen Angels*: green cast, saturated colours, strong grain, marked contrast. |
 | `kodachrome-64.lcpreset` | Kodachrome 64 | Slide film: punchy contrast, dense neutral blacks, deep saturated reds, darker blue skies, very fine grain. |
 | `kodak-gold-200.lcpreset` | Kodak Gold 200 | Consumer colour negative: golden warmth, boosted yellows and oranges, muted blues, medium contrast, visible grain. |
-| `ektar-100.lcpreset` | Ektar 100 | Colour negative with slide-like punch: vivid saturation, deep reds and blues, firm contrast, very fine grain. |
+| `ektar-100.lcpreset` | Ektar 100 | Colour negative with slide-like punch: strong reds and deep blues on an otherwise neutral palette, cyan-leaning shadows, very fine grain. |
 
 In LightCraft they live in the **Looks** preset group.
 
